@@ -302,7 +302,7 @@ D = sprites.create(img`
     `, SpriteKind.Player)
 D.setPosition(17, 62)
 D.sayText(":)")
-game.onUpdateInterval(5000, function () {
+game.onUpdateInterval(1000, function () {
     random = randint(0, 10)
     if (random < 5) {
         projectile2 = sprites.createProjectileFromSide(img`
